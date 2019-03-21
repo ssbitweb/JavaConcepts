@@ -1,0 +1,141 @@
+	Selenium Environment Setup
+	1) JAVA : (My Version jdk1.8.0.201 , java version 8 build 201)
+	2) eclipse IDE:(My version Version: Oxygen Release Milestone 4 (4.7.0 M4)
+	3) Selenium jar(My version - 3.141.59)
+	4) Browser & Browser-Driver:
+		My version:
+		Chorme- Version 72.0.3626.109 (Official Build) (32-bit)
+		Firefox - Version 65.0
+		IE	- version 11.0.9600.17843
+	5) TestNG And Jcommander:(My version: TestNg-6.11 & JCommander -1.69)
+	6) Log4j 2 -(My Version - 2.11.2)
+	7) ExtentReport (My Version - 2.41.2)
+	8) Apache POI for excel 2007+( My version - 4.0.1)
+	9) Maven - Build tool - Project management Tool(My version - apache-maven-3.6.0)
+	10)Git - Download and install Git software(My version- 2.21.0)
+
+	********************************************************************************************************************************
+
+	1) JAVA : (My Version jdk1.8.0.201 , java version 8 build 201)
+	
+	//Download and install java (e.g. jdk1.8.0.201 or latest version) and Set Environment variable.
+	1- Nevigate to "https://www.oracle.com/technetwork/java/javase/downloads/index.html"
+	2- if you are using 64-bit windows use latest version of JAVA SE Version i.e jdk 11 or higher
+	3- if you are using 32-bit wondows use Java SE 8u201 / Java SE 8u202 version i.e. jdk 8 
+	4- Under Java SE Development Kit 8u201 -> choose Windows x86 ->jdk-8u201-windows-i586.exe(for win-32) and click .
+	5- jdk-8u201-windows-i586.exe is executable file.. it will create "java" folder in C:\Program Files 
+	6- and under java folder two folder jdk1.8.0 and jre1.8.0 folder created..
+	
+	1.1)-//setting Environment Variable
+	1- copy jdk path i.e "C:\Program Files\Java\jdk1.8.0_201\bin" including bin  
+	2- Go to conttrol panel -> System -> Advanced System settings ->Environment Variable -> under system veriable find "path" 
+	   and edit it and paste path you copied in variable value. after semicolon.(semicolon is for seperation)
+	3- click ok -> ok . and done.
+	---------------------------------------------------------------------------------------------------------------------------------
+	2) eclipse IDE:(My version Version: Oxygen Release Milestone 4 (4.7.0 M4)
+
+	// Download and unzip and pin eclipse to task bar
+	1- navigate to "http://www.eclipse.org/downloads/".
+	2- if you are using win-64 bit download latest version 
+	3- if you are using 32 ->"https://www.eclipse.org/downloads/packages/release/helios/sr1/eclipse-ide-java-developers"
+	4- Fownload unzip and pin eclipse.exe to task bar double click in eclipse.exe and set workplace...
+	----------------------------------------------------------------------------------------------------------------------------------
+	3) selenium jar(My version - 3.141.59)
+
+	1- Navigate to "http://www.seleniumhq.org/download/" .
+	2- Download "Selenium Standalone Server-3.141.59 " jAR FILE -latest version i.e 
+	3- Create new folder "lib" in your project and unzip "selenium-server-standalone-3.141.59.jar" file
+	4- Build path i.e right click on project of your eclipse IDE -> Build path-> configure build path-> add external jars-> add all jars from lib folder.
+	----------------------------------------------------------------------------------------------------------------------------------
+	4) Browser & Driver:
+		My version:
+		Chorme- Version 72.0.3626.109 (Official Build) (32-bit)
+		Firefox - Version 65.0
+		IE	- version 11.0.9600.17843
+
+	//Download required browser and Drivers
+	1- Create folder "Driver" in your workspace project
+	2- Navigate to "http://www.seleniumhq.org/download/"  
+	3- Download Chrome browser setup.exe file And Install(->Search Google)
+	   Download Chrome driver -> https://sites.google.com/a/chromium.org/chromedriver/downloads. 
+	4- Download Firefox (version above 47 if you are using selenium 3 and above)(->Search Google)
+	   Download Gecko Driver -> "https://github.com/mozilla/geckodriver/releases" Note: choose win32 or win64 depending...
+	5- Download InternetExplorer(Default in win)(->Search Google)
+	   Download The Internet Explorer Driver Server from "http://www.seleniumhq.org/download/" -> 32 bit Windows IE .
+	6- unzip all drivers i.e "chromedriver","geckodriver", and "IEDriverServer" and put in "Driver" folder of your project.
+	   and set Environment variable -> using path "C:\Selenium_Automation\Projects\LetsKodeIt\lib\drivers"
+	------------------------------------------------------------------------------------------------------------------------------------   
+	5)TestNG And Jcommander:(My version 6.11)
+
+	//Download and Install TestNG plugin and jars
+	1- Download TestNG ->"https://mvnrepository.com/artifact/org.testng/testng/6.11"
+	2- Download Jcommander -> "https://mvnrepository.com/artifact/com.beust/jcommander/1.69"
+	3- unzip in lib and add biuld path of both..
+	-------------------------------------------------------------------------------------------------------------------------------------
+	6) Log4j 2 -(My Version - 2.11.2)
+	//Download jar and configure build path
+	1- Navigate to "https://logging.apache.org/log4j/2.0/download.html" and download "Apache Log4j 2 binary (zip)"
+	2- Extract in lib folder and configure build path only two i.e "log4j-api-2.11.2" and "log4j-core-2.11.2"
+	---------------------------------------------------------------------------------------------------------------------------------------
+	7) ExtentReport (My Version - 2.41.2)
+	// Download Extent Report jars and all dependencies and  configure Build path
+	1- navigate to "https://mvnrepository.com/artifact/com.relevantcodes/extentreports/2.41.2" and download jar and all dedpendencies
+	2- Extract jars and all dependencies jar and configure build path..
+	---------------------------------------------------------------------------------------------------------------------------------------
+	8) Apache POI for excel 2007+( My version -4.0.1)
+	// Download and Extract all jars from apache poi and configure build path except log4j jar
+	1- Navigate to "https://poi.apache.org/download.html" and download - "poi-bin-4.0.1-20181203.zip" .
+	2- Extract and configure build path except log4j jar..
+	3- For excel 2007 you need to download jxl jar..
+	---------------------------------------------------------------------------------------------------------------------------------------
+	*****************************************************************************************************************************************
+	9) Maven - Build tool - Project management Tool(My version - apache-maven-3.6.0)
+	//Dowbload Maven Zip file and set up Environment Veriable using system properties ..including JAVA_HOME,M2_HOME,M2,MAVEN_OPTS . 
+	1- Navigate to "http://maven.apache.org/download.cgi" and download binary zip "apache-maven-3.6.0-bin.zip" ..
+	2- Extract the zip and Store it to create folder=> program files/Apache/
+	3- Go to system ->advanced sysyem settings-> Environment Veriable AND Create New Veriable as -
+	   variable name = M2_HOME and variable value = C:\Program Files\Apache\apache-maven-3.6.0 and again new variable as-
+	   variable name = M2 and variable value = %M2_HOME%\bin
+	   variable name = JAVA_HOME and variable value = C:\Program Files\Java\jdk1.8.0_201
+	   variable name = MAVEN_OPTS and variable value = -Xms256m -Xmx512m
+	And Most Important add - %M2% to path variable.
+	------------------------------------------------------------------------------------------------------------------------------------------
+	10) Jenkins -- CI Tool - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+	=================================================================================================================================================
+	11) Grid : Used to run multiple tests on Multiple browser and diff platform -parallel., uses hub-node(Master-slave)concept--
+		where tests runs on single machine called (hub), but execution done by diff machine called (node) - parallely.-->why?-> to reduce execution time
+	//Download selenium-server-standalone3.141.59.jar  --> 
+	To start hub- open cmd --> locate jar file--> run command --> java -jar selenium-server-standalone-3.141.59.jar -role hub
+	To verify grid is running -> in browser --> http://localhost:4444/grid/console
+	To register hub as a node -> in cmd -> java -jar selenium-server-standalone-3.141.59.jar -role node -hub http://loclahost:4444/grid/register -port 5555
+	To start only one node -> java -jar selenium-server-standalone-3.141.59.jar -role node -hub http://localhost:4444/grid/register -port 5555 -browser browserName=chrome,maxinstances=1
+	
+
+	======================================================================================================================================================
+	12) Git - Download and install Git software(My version- 2.21.0)
+	1- create account on https://www.github.com and vreate new repository
+	2- Open cmd and locate ur project --> then run command -->git init
+	3- then ---> git remote add origin https://github.com/ssbitweb/JavaConcepts.git
+	4- check status -- > git status
+	5- to add all files use command --> git add .
+	6- and to push --> git push origin master --> this will add all ur dir to github --> this may ask username and password first time.. or create privateKey.
+	7- check status --> git status
+	8- commit master branch --> git commit -m "your first commit"
+
+
+
+
+	
