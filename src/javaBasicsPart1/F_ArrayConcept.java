@@ -20,11 +20,11 @@ public class F_ArrayConcept {
 		i[2] = 30;
 		i[3] = 40;
 		
-		System.out.println(i[2]);		//	30
-		System.out.println(i[3]);	 	// 	40
-//		System.out.println(i[4]);	 	// Gives Error/Exception --> ArrayIndexOutOfBoundsException coz index 4 is not exist.
+		System.out.println(i[2]);  // 30
+		System.out.println(i[3]);  // 40
+//		System.out.println(i[4]);  // Gives Error/Exception --> ArrayIndexOutOfBoundsException coz index 4 is not exist.
 		
-		System.out.println(i.length); 	// 	4
+		System.out.println(i.length);  // 4
 		
 		// Print all the values of array use for loop
 		
@@ -40,8 +40,8 @@ public class F_ArrayConcept {
 		s[1] = "bhagat";
 		s[2] = "pune";
 		
-		System.out.println(s[2]);		// pune
-		System.out.println(s.length); 	// 3
+		System.out.println(s[2]);	// pune
+		System.out.println(s.length); // 3
 		
 		//----------------------------------------------------------------------------------------------------------------------
 		
@@ -51,7 +51,7 @@ public class F_ArrayConcept {
 		d[1] = 20.13;
 		d[2] = 30.15;
 		
-		System.out.println(d[2]); 		// 30.15
+		System.out.println(d[2]); // 30.15
 		
 		//--------------------------------------------------------------------------------------------------------------------
 		
@@ -61,9 +61,9 @@ public class F_ArrayConcept {
 		c[1] = '1';
 		c[2] = 'G';
 		
-		System.out.println(c[2]);		// G
-		System.out.println(c[1]);		// 1
-		System.out.println(c.length);	// 3
+		System.out.println(c[2]);  // G
+		System.out.println(c[1]);  // 1
+		System.out.println(c.length); // 3
 		
 		//------------------------------------------------------------------------------------------------------------------------
 		
@@ -76,7 +76,7 @@ public class F_ArrayConcept {
 		ob[4] = 'M';
 		ob[5] = "London";
 		
-		System.out.println(ob[5]);  	// London
+		System.out.println(ob[5]);  // London
 	}
 
 }

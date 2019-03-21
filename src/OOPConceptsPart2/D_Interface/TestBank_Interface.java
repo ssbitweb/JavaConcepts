@@ -21,8 +21,8 @@ public abstract class TestBank_Interface {
 		ub.credit();
 		ub.debit();
 		ub.transferMoney();
-//		ub.carloan();				// ERROR -- car loan is HSBC's own method cant access.
-//		ub.ecucationLoan();			// Error -- not possible coz parent ref var trying to access Brazil's method.
+//		ub.carloan();		 // ERROR -- car loan is HSBC's own method cant access.
+//		ub.ecucationLoan();	 // Error -- not possible coz parent ref var trying to access Brazil's method.
 
 	}
 

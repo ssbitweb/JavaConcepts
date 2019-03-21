@@ -5,15 +5,16 @@ package OOPConceptsPart2.D_Interface;
 public class HSBCBank extends Finance implements USBank, BrazilBank{ 	// **we are now achieving multiple inheritance
 	// IS-A relationship
 	
+	// from finance class
 	@Override
-	public void stock() {								// this overriding
+	public void stock() {		// this overriding
 		System.out.println("HSBC--stock");
 		
 	}
 	
 	// overriding from USBank
 	@Override
-	public void debit() {								// this implementing
+	public void debit() {		// this implementing
 		System.out.println("HSBC--debit");
 		
 	}

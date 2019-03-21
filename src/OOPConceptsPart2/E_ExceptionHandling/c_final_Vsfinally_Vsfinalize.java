@@ -8,18 +8,18 @@ package OOPConceptsPart2.E_ExceptionHandling;
 // finally -- block is executes always even after exception.
 
 // finalize -- finalize is method , related to garbage collection
-//			that clean up the memory..how? -- can call manually-- System.gc();
-// 			-- when finalize method is called the garbage collector is called and 
-//			gc destroyed all the objects that don't have any reference or null reference..
+//	--that clean up the memory..how? -- can call manually-- System.gc();
+// 	-- when finalize method is called the garbage collector is called and 
+//	gc destroyed all the objects that don't have any reference or null reference..
 
 
-public class c_final_Vsfinally_Vsfinalize {
+public class C_final_Vsfinally_Vsfinalize {
 
 	public static void main(String[] args) {
 		
 		final int i = 10;	// final value -- constant.
 		
-//		i = 20;				// changed value of i to 20
+//		i = 20;	// changed value of i to 20
 		
 //		i = 30;
 		
@@ -61,8 +61,8 @@ public class c_final_Vsfinally_Vsfinalize {
 		int i = 10;
 		try {
 			System.out.println("inside try block");
-			int j = i/0;							// gives exception --> ArithmeticException
-		}catch(NullPointerException e) {			// not handled properly-- arithmetic exception and u provide NullPointerException
+			int j = i/0;				 // gives exception --> ArithmeticException
+		}catch(NullPointerException e) { // not handled properly-- arithmetic exception and u provide NullPointerException
 			System.out.println("inside -- catch block");
 			System.out.println("/ by zero error");
 		}

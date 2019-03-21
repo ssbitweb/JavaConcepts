@@ -25,7 +25,7 @@ package OOPConceptsPart2.E_ExceptionHandling;
 //		CheckedException	
 //----------------------------------------------------------------------------------------------------------
 
-public class a_Try_Catch {
+public class A_Try_Catch {
 	
 	int i = 10;
 
@@ -33,14 +33,14 @@ public class a_Try_Catch {
 		
 		// uncaught/unchecked/runtime exception
 //		int i = 9/0;
-//		System.out.println(i);					// ArithmeticException -- / by zero
+//		System.out.println(i);	// ArithmeticException -- / by zero
 		
 		// caught/checked/compile-time exception
 //		Thread.sleep(2000);
 		
-		a_Try_Catch m = new a_Try_Catch();
+		A_Try_Catch m = new A_Try_Catch();
 //		m = null;
-//		System.out.println(m.i);				// NullPointerException -- > without reference i.e we define ref as null.
+//		System.out.println(m.i);  // NullPointerException -- > without reference i.e we define ref as null.
 		
 //----------------------------------------------------------------------------------------------------------------------
 		
@@ -48,11 +48,11 @@ public class a_Try_Catch {
 		// 1. Try catch block
 		
 		try {
-			int i = 9/0;						// this code will throw an exception.
+			int i = 9/0;	// this code will throw an exception.
 		}
-		catch(ArithmeticException e) {			// this code/block catch/handle an exception. 
-		e.printStackTrace(); 					// this code print why/what type of exception u getting	
-		System.out.println(e.getMessage());		// this print message of why?
+		catch(ArithmeticException e) {	// this code/block catch/handle an exception. 
+		e.printStackTrace(); 			// this code print why/what type of exception u getting	
+		System.out.println(e.getMessage());	// this print message of why?
 		}
 		System.out.println("Execute Me");
 		

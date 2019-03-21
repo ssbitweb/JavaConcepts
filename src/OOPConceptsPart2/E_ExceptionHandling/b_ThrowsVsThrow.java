@@ -11,11 +11,11 @@ package OOPConceptsPart2.E_ExceptionHandling;
 // throw -- throw in method body.
 
 
-public class b_ThrowsVsThrow {
+public class B_ThrowsVsThrow {
 
 	public static void main(String[] args) {
 		
-		b_ThrowsVsThrow  m = new b_ThrowsVsThrow();
+		B_ThrowsVsThrow  m = new B_ThrowsVsThrow();
 		
 		m.sum();
 		
@@ -33,20 +33,20 @@ public class b_ThrowsVsThrow {
 
 	}
 	
-	public void sum() {								// handle in calling.
+	public void sum() {	 // handle in calling.
 		try {
 			div();
 			
-		}catch(ArithmeticException e) {				// }catch(Exception e) {	--> handle all exception
-													// }catch(Error e) {		--> handle all error
-		}											// }catch(throwable e) {	--> handle error and exception -- its superclass of exception and error
-		System.out.println("Execute Me");			// }catch(Object e) {		--> handle all -- its super-most of all classes
+		}catch(ArithmeticException e) {	 // }catch(Exception e) {	--> handle all exception
+										 // }catch(Error e) {		--> handle all error
+		}								 // }catch(throwable e) {	--> handle error and exception -- its superclass of exception and error
+		System.out.println("Execute Me");// }catch(Object e) {		--> handle all -- its super-most of all classes
 	}
 	
 	public void div() throws ArithmeticException {	// throws used to declare an exception., and can declare multiple ,, Exception class
 		
-		int i = 9/0;								// causing exception
-		throw new ArithmeticException();			// throw is used to throw an exception explicitly..,, one instance variable
+		int i = 9/0;					// causing exception
+		throw new ArithmeticException();// throw is used to throw an exception explicitly..,, one instance variable
 		
 	
 	}

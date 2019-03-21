@@ -12,9 +12,9 @@ package OOPConceptsPart2.C_Abstraction;
 
 public abstract class Bank {
 
-	public abstract void loan();			// abstract method  -- no method body
+	public abstract void loan(); // abstract method  -- no method body
 											
-	public void credit() {					// non abstract method -- simple method
+	public void credit() {	// non abstract method -- simple method
 		System.out.println("Bank--credit");
 	}
 	

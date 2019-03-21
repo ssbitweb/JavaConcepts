@@ -18,14 +18,14 @@ public class C_If_Else_StringConcatenation {
 		String x = "Hello";
 		String y = "World";
 		
-		System.out.println(a+b);				//	300
-		System.out.println(x+y);				//	HelloWorld
+		System.out.println(a+b);  // 300
+		System.out.println(x+y);  // HelloWorld
 		
 		//concatenation --> execution from left to right
 		
-		System.out.println(a+b+x+y);			//	300HelloWorld
-		System.out.println(x+y+a+b);			//	HelloWorld100200
-		System.out.println(a+b+x+y+a+x+b+y);	//	300HelloWorld100Hello200World
+		System.out.println(a+b+x+y);  // 300HelloWorld
+		System.out.println(x+y+a+b);  // HelloWorld100200
+		System.out.println(a+b+x+y+a+x+b+y);  // 300HelloWorld100Hello200World
 		
 		//comparison Operator 
 		// < > <= >= == !=

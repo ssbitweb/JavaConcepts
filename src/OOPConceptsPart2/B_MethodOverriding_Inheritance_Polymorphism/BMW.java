@@ -14,8 +14,8 @@ package OOPConceptsPart2.B_MethodOverriding_Inheritance_Polymorphism;
 // child class or sub-class					
 public class BMW extends Car{	// HAS-A relationship , // inheritance 
 	
-	public void start() {					// method overriding - start() method is already present in parent class(Car).
-		System.out.println("BMW--start");	// preference will be given to child method.
+	public void start() {		// method overriding - start() method is already present in parent class(Car).
+		System.out.println("BMW--start"); // preference will be given to child method.
 	}
 	
 	public void theftSafety() {

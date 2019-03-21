@@ -19,7 +19,7 @@ public class SumOf_20_EvenNumbers_1To100 {
 			
 		}
 	}
-	public static boolean isEvenNumber(int n) {
+	public static boolean isEvenNumber(int n) { // method static
 		if(n%2 == 0) {
 			return true;
 		}
