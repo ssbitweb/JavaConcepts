@@ -16,6 +16,8 @@ public class String_OccuranceOfChar {
 		System.out.println("Occurance of r : " + occurranceOfChar(s, 'r')); //1
 		System.out.println("Occurance of d : " + occurranceOfChar(s, 'd')); //1
 		
+		//occurranceOfChar(s, 'e');
+		
 	}
 	public static int occurranceOfChar(String str, char c) {
 		int count = 0;
@@ -23,6 +25,7 @@ public class String_OccuranceOfChar {
 			if(str.charAt(i) == c) {
 				count++;
 			}
+			
 		}
 		return count;
 	}
