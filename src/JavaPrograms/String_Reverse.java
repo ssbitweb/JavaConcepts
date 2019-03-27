@@ -1,40 +1,30 @@
 package JavaPrograms;
 
-// Q. Write a program to reverse the String.
-
 public class String_Reverse {
 
 	public static void main(String[] args) {
 
-		String s1 = "sachin bhagat";
+		
+		String s = "one two three four five six seven";
 
-		System.out.println(reversedString(s1)); //tagahb nihcas
+		System.out.println(reverse(s)); //seven six five four three two one 
 		
-		//check if palindrome
-		String original = "bob";
-		String reversed = reversedString(original);
-		if(original.equals(reversed)) {		// do not use ==
-			System.out.println("palindrome string");
-		}else {
-			System.out.println("not palindrome");
-		}
 		
+		
+//		String a ="sachin"; 	//--split without space
+//		System.out.println(reverse(a)); //nihcas
+	
 
-		//2. using StringBuffer class
-		StringBuffer sb = new StringBuffer(s1);
-		System.out.println(sb.reverse()); // tagahb nihcas
-			
-		
 	}
 	
-	// 1. using for loop
-	public static String reversedString(String s) {
-		int len = s.length();
-		String rev = "";
-		for(int i=len-1; i>=0; i--) {
-			rev = rev + s.charAt(i);
+	public static String reverse(String str) {
+		String reversed = "";
+		String[] original = str.trim().split(" ");
+		for(String words : original) {
+			reversed = words + " " + reversed;
+			//System.out.println(reversed);
 		}
-		return rev;
+		return reversed;
 	}
 
 }

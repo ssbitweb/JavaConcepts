@@ -28,12 +28,12 @@ public class String_RemoveDuplicateWords {
 		
 		//================================================
 		String s1 = "hello my name is sachin sachin sachin";
-		removeDuplicateWords(s1);
+		removeDuplicateWords(s1); // hello my name is sachin
 		
 
 	}
 	
-	public static void removeDuplicateWords(String str) {
+	public static void removeDuplicateWords(String str) { //method
 		String[] words = str.toLowerCase().split(" ");
 		int dupCount = 1;
 		for(int i =0; i<words.length; i++) {
