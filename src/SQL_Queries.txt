@@ -1,0 +1,418 @@
+
+	//******************Table Employee*******************************
+======================================================================================
+	id	Employee_Name	Employee_Designation	Department	Salary
+	2	Sachin Wardha	QA Engineer		Testing		35000
+	3	Sachin Pune	Automation_Engineer	Computer	80000
+	4	pallavi lungare	BDO			EXTC		90000
+	5	shivani cnx	Operation backEnd	Computer	60000
+	6	sayali rgh	Test Engineer		IT		50000
+	7	tom cruz	Superhero		Film		250000
+	9	Sachin Bhagat	Software Engineer	Computer	80000
+
+
+
+	******SQL/Mysql Queries********
+
+	1. Creating Database
+	========================
+	
+=>	CREATE DATABASE companydb;
+
+	2. Deleting database:
+	========================
+
+=>	DROP DATABASE companydb;
+
+
+	3.Creating tables
+	========================
+
+	CREATE TABLE Employee (
+=>	Employee_Name varchar(100),
+	Employee_Designation varchar(50),
+	Salary INT(9)
+	);
+
+	4.Adding column after perticular column
+	========================================
+
+=> 	ALTER TABLE Employee ADD COLUMN Department varchar(50) AFTER Employee_Designation;
+
+	
+	5.Deleting column
+	==========================
+
+=>	ALTER TABLE Employee DROP COLUMN Department;	
+
+	
+	6.Adding data to columns
+	===========================
+
+=>	INSERT INTO employee(Employee_Name,Employee_Designation,Department,Salary)
+	VALUES('Sachin Bhagat', 'Software Engineer', 'Computer', '80000');
+
+	OR 
+	INSERT INTO employee(Employee_Name,Employee_Designation,Department,Salary)
+	VALUES
+	('Sachin Pune', 'Software Engineer', 'Computer', '80000'),
+	('pallavi lungare', 'BDO', 'EXTC', '90000'),
+	('shivani cnx', 'Operation backEnd', 'Computer', '60000'),
+	('sayali rgh', 'Test Engineer', 'IT', '50000'),
+	('tom cruz', 'Superhero', 'Film', '250000');
+
+	OR create excel and import using load data.--best way
+
+	7. To select all table content
+	=====================================
+
+=>	SELECT*FROM Employee;
+
+
+	8. Select only some column
+	============================
+
+=>	SELECT  id, Employee_name FROM Employee;
+	SELECT  Employee_name, Salary FROM Employee;
+
+	
+	8. To select one value
+	==========================================
+
+=>	SELECT Employee_Name FROM employee WHERE Employee_Designation ='QA Engineer';
+
+
+	8. Adding Primary key
+	================================
+
+=>	ALTER TABLE employee ADD id INT NOT NULL AUTO_INCREMENT FIRST,
+	ADD PRIMARY KEY (id)
+
+	
+	9. To SET perticular value
+	==============================
+
+=> 	update employee SET Employee_Designation ='QA Engineer' WHERE id = '2';
+
+
+	10. Ordering table
+	==========================
+
+=>	SELECT*FROM Employee ORDER BY id; 		-- ascending
+	SELECT*FROM Employee ORDER BY Salary; 	
+	SELECT*FROM Employee ORDER BY Salary DESC; 	-- descending
+	SELECT*FROM Employee ORDER BY Department, salary, 
+	SELECT*FROM Employee ORDER BY Department, salary DESC; 
+
+
+********************** Filter WHERE -->with  OR, AND *****************************
+
+
+	1. WHERE CLAUSE
+	=====================================
+
+=>	SELECT * FROM `Employee` WHERE Salary > 50000;
+	SELECT * FROM `Employee` WHERE Salary = 50000;
+	SELECT * FROM `Employee` WHERE Salary < 50000;
+	SELECT * FROM `Employee` WHERE Department = 'Computer';
+
+	2. OR -- either of conditioN must TRUE
+	======================================
+
+=>	SELECT * FROM `Employee` WHERE Department = 'Computer' OR Salary > 50000;
+
+
+	3. AND -- BOTH condithon must be true
+	======================================
+
+=>	SELECT * FROM `Employee` WHERE Department = 'Computer' AND Salary > 50000;
+
+
+
+************** Filter WHERE --> with IN, BETWEEN *****************************
+
+
+
+	1.IN   -- Select all matching sal.
+	========
+
+=>	SELECT * FROM `Employee` WHERE Salary IN(60000, 80000, 35000);
+
+	2. NOT IN 	--> exclude all matching
+	============
+
+=> 	SELECT * FROM `Employee` WHERE Salary NOT IN(60000, 80000, 35000);
+
+
+	3.BETWEEN	--> display range between
+	================
+
+=>	SELECT * FROM `Employee` WHERE Salary BETWEEN 50000 AND 100000;
+
+	SELECT * FROM `Employee` WHERE Salary NOT BETWEEN 50000 AND 100000; --exclude
+
+
+
+************ Filter wild Card Pattern(Like)--> % , _ Symbols *********************
+
+
+	1. LIKE %
+	======================
+
+	SELECT * FROM `Employee` WHERE Employee_Name = 'Sachin Bhagat';	--exact match
+
+=>	SELECT * FROM `Employee` WHERE Employee_Name LIKE 'S%';		-- starts with
+
+	SELECT * FROM `Employee` WHERE Employee_Name LIKE '%l%';	-- anywhere in name
+
+	SELECT * FROM `Employee` WHERE Employee_Name LIKE '_h%';	-- second char starts with h, rest anything.
+
+	SELECT * FROM `Employee` WHERE Employee_Name LIKE '%r_';	-- starts with anything, but second last char r.
+
+	SELECT * FROM `Employee` WHERE Employee_Name LIKE '______ ______'; -- six _ => exact length chars.
+
+	
+
+************** Distinct Keyword ***********************************************************
+
+
+	1. Distinct 	-- used to fetch unique value i.e to remove duplicate value.
+	===================================================
+
+	SELECT  Department FROM `Employee`;		-- select all dep.
+
+	SELECT DISTINCT Department FROM `Employee`; 	-- selecy all unique
+
+	SELECT DISTINCT * FROM `Employee` ;		-- REMOVE DUPLICATE RECORDS(if id not given)
+
+
+
+************** Group Functions ***************************************************************
+	
+	1. Mix
+	2. Max
+	3. Count
+	4. Avg
+	5. Sum
+
+
+	1. Max
+	================
+
+=> 	SELECT Max(Salary) FROM `Employee` ;		-- select maximum salary.
+	
+
+	2.Min
+	==================
+
+=>	SELECT Min(Salary) FROM `Employee` ;		-- select minimum sal.
+
+
+	3.Avg
+	==================
+
+=> 	SELECT Avg(Salary) FROM `Employee` ;		-- display average sal.
+
+
+	
+	4.Sum
+	===================
+
+=>	SELECT Sum(Salary) FROM `Employee` ;		-- display sum sal.
+
+
+	5.Count
+	==================
+
+=>	SELECT Count(Salary) FROM `Employee` ;		--count no of salaries..
+
+	SELECT Count(*) FROM `Employee` ;		--count no of rows in table.
+
+
+
+
+******************* GROUP BY, HAVING ******************************************
+
+
+	1.GROUP BY , HAVING.
+	===========================
+
+=>	SELECT Department,  Count(*) FROM `Employee` GROUP BY (Department); 	-- display all dep with their count.
+
+	SELECT Department,  Count(*) FROM `Employee` GROUP BY (Department) HAVING Count(*) > 1; 	-- dep > 1.
+
+
+	SELECT Employee_Designation,  Count(*) FROM `Employee` WHERE SALARY >50000 GROUP BY (Department) HAVING Count(*) > 0; 
+	
+		--> SELECT ALL DESG FRM EMP WHOSE SAL>50000 AND GROUP DEP WITH COUNT.
+
+
+
+
+************************** SubQuery *******************************************
+
+
+
+	1. Subquery -- query inside a query...
+=>	================================================
+	
+
+	SELECT * FROM `Employee` WHERE Salary > 
+  		(SELECT Avg(Salary) FROM Employee);	-- select sal > avg sal.
+	
+
+
+
+
+************************** Delete vs Truncate vs Drop ************************************
+
+
+	1.Delete
+	=============
+
+=>	DELETE FROM Employee WHERE Employee_Name = 'Sachin Bhagat';	-- deletes one rows.
+
+	
+	DELETE  FROM `Employee`;	-- Deletes all data but table structure still exists..
+
+
+	2. TRUNCATE
+	===============
+
+
+=>	TRUNCATE TABLE Employee;	-- deletes all data but table structure still exist.
+
+
+	3.DROP
+	=================
+
+=>	DROP TABLE employee;		--deletes all data and structure also..
+
+
+
+==========================================================================
+
+***************** Table dept ******************************************  
+
+
+	id	Employee_Name	Employee_Designation	Department	Salary
+	2	Sachin Wardha	QA Engineer		Testing		35000
+	3	Sachin Pune	Automation_Engineer	Computer	80000
+	4	pallavi lungare	BDO			EXTC		90000
+	5	shivani cnx	Operation backEnd	Computer	60000
+	6	sayali rgh	Test Engineer		IT		50000
+	7	tom cruz	Superhero		Film		250000
+	9	Sachin Bhagat	Software Engineer	Computer	80000
+	10	Alien		Traveller		Space		25
+
+
+************************ JOINS *****************************************
+
+
+	Join -- Join are used to fetch the data from  2 or more table.
+
+	Tppes of Join
+
+	1- Equi/Inner/ Simple join
+	2- Outer Join
+	3- Cross Join
+	4- Self Join
+
+
+
+	1.Cartesian Join OR --Cross Join
+	====================================
+	--each records from one table is concatenated with each records from other table.
+	
+	-- Final No of records  = ( no of records in table1 ) * (No of records in table2).
+
+
+=>	SELECT * FROM `dept` CROSS JOIN employee;		-- gives 49 records..
+
+
+	2.INNER JOIN
+	=================================
+	-- using INNER JOIN we can fetch the data from multiple table by equating the values of one or more column
+
+=>	SELECT a.id, b.id , a.Employee_Name, b.Employee_Name, a.Salary, b.Salary
+	FROM employee AS a
+	INNER JOIN dept as b ON
+	a.id = b.id;
+
+
+	3. OUTER JOIN
+	=============================
+	-- outer join is used when we want to fetch the data by equating some condition, but it also fetch the data 
+	   which does not have corresponding records in other table.
+
+	Types
+	-- Left outer JOIN
+	-- Right outer join
+
+	3.1- RIGHT OUTER JOIN
+	====================
+
+=>	SELECT a.id, b.id , a.Employee_Name, b.Employee_Name, a.Salary, b.Salary
+	FROM employee AS a
+	RIGHT JOIN dept AS b ON
+	a.id = b.id ;
+
+	
+	
+	3.2 - LEFT OUTER JOIN
+	====================
+
+=>	SELECT a.id, b.id , a.Employee_Name, b.Employee_Name, a.Salary, b.Salary
+	FROM employee AS a
+	LEFT JOIN dept AS b ON
+	a.id = b.id ;
+
+
+	4 SELF JOIN 
+	==============================
+	--JOIN a table to itself
+	-- its like we are making two copies of table..and making join between them.
+
+	
+=>	SELECT * FROM employee a, employee b
+	WHERE a.id = b.id;	
+
+
+================================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

@@ -20,7 +20,7 @@ public class SumOf_20_EvenNumbers_1To100 {
 		}
 	}
 	public static boolean isEvenNumber(int n) { // method static
-		if(n%2 == 0) {
+		if(n%2 == 0) { // mod means remainder
 			return true;
 		}
 		return false;
