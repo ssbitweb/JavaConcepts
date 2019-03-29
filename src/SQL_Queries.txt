@@ -34,6 +34,12 @@
 	Salary INT(9)
 	);
 
+	4.To know table structure
+	=============================
+
+=>	DESC Employee;
+
+
 	4.Adding column after perticular column
 	========================================
 
@@ -63,6 +69,22 @@
 
 	OR create excel and import using load data.--best way
 
+
+	5.Copying Existing table
+	=============================
+
+=>	CREATE TABLE Employee_new AS SELECT * FROM Employee;
+
+
+	7. VIEW 
+	====================
+	-- VIEW are similar to table ,but views does not hold its data-- its used to secure data.
+
+
+=>	CREATE VIEW emp_view AS SELECT Employee_Name, Department, Salary FROM Employee;
+
+
+
 	7. To select all table content
 	=====================================
 
@@ -82,14 +104,24 @@
 =>	SELECT Employee_Name FROM employee WHERE Employee_Designation ='QA Engineer';
 
 
+	9. INDEX
+	===================
+	-- INDEX are used to increase performance, when we make lot of select Queries..
+
+=>	CREATE INDEX dep_index ON Employee(Department);
+
+	SELECT * FROM Employee WHERE Department = 'Computer'; -- select only row index of Computer so performance incresed.
+
+
+
 	8. Adding Primary key
 	================================
 
 =>	ALTER TABLE employee ADD id INT NOT NULL AUTO_INCREMENT FIRST,
-	ADD PRIMARY KEY (id)
+	ADD PRIMARY KEY (id);
 
 	
-	9. To SET perticular value
+	9. UPDATE --To SET perticular value
 	==============================
 
 => 	update employee SET Employee_Designation ='QA Engineer' WHERE id = '2';
@@ -103,6 +135,44 @@
 	SELECT*FROM Employee ORDER BY Salary DESC; 	-- descending
 	SELECT*FROM Employee ORDER BY Department, salary, 
 	SELECT*FROM Employee ORDER BY Department, salary DESC; 
+
+=====================================================================================
+
+************** Constraints -- rules to hold data ************************************
+
+	1. NOT NULL
+	=============
+	null -- null is not available. or not assigned.
+	null -- null is not equal zero, beacuse zero is number;
+	null -- is not equal to empty space , empty space is character.
+
+=>	ALTER TABLE employee CREATE COLUMN Address NOT NULL AFTER Salary;
+	InSERT INTO employee(Address)
+	VALUES
+	('Pune'),
+	('Wardha'),
+	(NULL);	
+
+	-- means address column have some space or number.. but not null.
+	-- if we insert null value to it --it CAN not INSERT null VALUE..
+
+
+	2. UNIQUE KEY
+	================
+	-- holds only unique values
+	-- can hold NULL values.
+
+=>	ALTER TABLE employee ADD COLUMN emp_id INT(5) NULL AFTER id,
+	ADD UNIQUE KEY (emp_id);
+
+
+	3. PRIMARY KEY
+	===========================
+	-- can hold only unique values
+	-- cant be NULL.
+
+=>	ALTER TABLE employee ADD id INT NOT NULL AUTO_INCREMENT FIRST,
+	ADD PRIMARY KEY (id);
 
 
 ********************** Filter WHERE -->with  OR, AND *****************************
@@ -271,6 +341,7 @@
 	=============
 
 =>	DELETE FROM Employee WHERE Employee_Name = 'Sachin Bhagat';	-- deletes one rows.
+	DELETE FROM Employee WHERE Employee_Name = ' ';			-- delets all EMPTY rows.
 
 	
 	DELETE  FROM `Employee`;	-- Deletes all data but table structure still exists..
