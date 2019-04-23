@@ -1,0 +1,54 @@
+
+
+	1) Testing?
+	2) Qualities of Tester?
+	3) Types Of Testing?
+	4) 7 Principle of Testing?
+	5) Defect ? types of Defect?
+	6) Defect Life Cycle?
+	7) Defect leakage?
+	8) Defect Density?
+	9) Testing Level?
+	10) Unit Testing?
+	11) Integration Testing?
+	12) System Testing?
+	13) Acceptance testing?
+	14) SDLC?
+	15) STLC?
+	16) Diff SDLC Model?
+	17) Waterfall Model?
+	18) V Model?
+	19) Agile Model?
+	20) What is Quality? QA Vs QC?
+	21) Regerssion testing Vs Re-Testing?
+	22) Smoke Vs sanity?
+	23) Black Box Vs White Box/
+	24) Alpha Vs Beta?
+	25) Priority Vs Severity? with E.g
+	26) RTM - Requirement Tracebility matrix?
+	27) Smoke vs Adhoc
+	28) Test case Vs Test Scenarios?
+	29) Write test Scenarios on Topic Ur projects?
+	30) What are the contents of Test Plan?
+	31) what are entry and Exit criteria?
+	32) agile vs waterfall?
+	33) Testing Phases?
+	34) which Model u following?
+	35) what is positive and negative testing?
+	36) what is test plan and test strategy?
+	37) who will do UUAT?
+	38) what are web based and client based applications?
+	40) e.g of high severity and low priority ?
+	41) which defect tracking tool u using? what are diff issues?
+	42) test cases for pen?
+	43) most challenging faced in testing?
+	44) how you deploy the build?
+	45) what is AUT? what is Build?
+	46) diff types of test cases?
+	47) how will you execute 1000 regression suite in 8 hr?
+	48) what include test case template?
+	49) what are diff delevarables?
+	50) what is your roles and responsibility i project?
+	51) what are diff test optimization techniques?
+	
+	
