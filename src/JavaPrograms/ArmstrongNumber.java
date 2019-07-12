@@ -1,6 +1,6 @@
 package JavaPrograms;
 
-//Q. Write a program to check whether armstrong number?
+//Q. Write a program to check whether Armstrong number?
 
 // Armstrong Number -- if sum of n power of n digit number remains the same then -Armstrong
 // e.g 153 = 1*1*1 + 5*5*5 + 3*3*3 = 153
