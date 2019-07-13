@@ -1,13 +1,16 @@
 package OOPConceptsPart1;
 
-public class b_LocalVsGlobalVariables {
+// local variables-- are the black level variables..scope is within the block.
+// global Variables-- are the class level variables.. scope is throughout the class.
+
+public class _02_LocalVsGlobalVariables {
 	
 	String s = "sachin";	// s global/instance variables-- scope -- throughout the class
 	int age = 25;			// age - global variable.
 
 	public static void main(String[] args) {
 		
-		b_LocalVsGlobalVariables m = new b_LocalVsGlobalVariables();	// m local variables scope -- within main method.
+		_02_LocalVsGlobalVariables m = new _02_LocalVsGlobalVariables();	// m local variables scope -- within main method.
 		String name = m.s;											// name - local variable
 		System.out.println(name);
 		System.out.println(m.s);

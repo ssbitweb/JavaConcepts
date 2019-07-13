@@ -5,7 +5,7 @@ public class A_DataTypesAndVariables {
 	//This is main method -- execution starts from here -> single line comment
 	public static void main(String[] args) {
 		
-		/*DataType
+		/*DataType or Return type.
 		--Means Type of data. -> Block comment */  
 		
 		//--------------------------------------------------------------------------------------------------

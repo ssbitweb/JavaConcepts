@@ -7,23 +7,23 @@ package OOPConceptsPart1;
 // methods -->  represents the behavior..
 // Object--objects are the instances of class.
 
-public class a_Vehicles {
+public class _01_Classes_And_Objects {
 	
 	int speed;		// instance/global variable or class variable
 	int wheels;
 
 	public static void main(String[] args) {
 
-		//new Vehicles --> this is object of class Vehicles
+		//new _01_Classes_And_Objects() --> this is object of class Vehicles
 		//new keyword is used to create object.
 		//bike,car,train --> this is object reference variable of class Vehicles
 		
 //		speed = 10; // we cannot access class variable without creating objects.
 		
-		a_Vehicles bike = new a_Vehicles();		// creating objects.  why? --> to access class variables. i.e Vehicle variable
-		a_Vehicles car = new a_Vehicles();
-		a_Vehicles train = new a_Vehicles();
-		a_Vehicles aeroplane = new a_Vehicles();
+		_01_Classes_And_Objects bike = new _01_Classes_And_Objects();		// creating objects.  why? --> to access class variables. i.e Vehicle variable
+		_01_Classes_And_Objects car = new _01_Classes_And_Objects();
+		_01_Classes_And_Objects train = new _01_Classes_And_Objects();
+		_01_Classes_And_Objects aeroplane = new _01_Classes_And_Objects();
 		
 		
 		bike.speed = 25;
