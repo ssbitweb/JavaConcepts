@@ -2,8 +2,8 @@ package OOPConceptsPart1;
 
 public class b_LocalVsGlobalVariables {
 	
-	String s = "sachin";			// s global/instance variables-- scope -- throughout the class
-	int age = 25;					// age - global variable.
+	String s = "sachin";	// s global/instance variables-- scope -- throughout the class
+	int age = 25;			// age - global variable.
 
 	public static void main(String[] args) {
 		

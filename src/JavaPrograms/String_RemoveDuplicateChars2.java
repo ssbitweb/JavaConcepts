@@ -7,7 +7,7 @@ public class String_RemoveDuplicateChars2 {
 	public static void main(String[] args) {
 
 
-		String s ="sachiiiiiin";
+		String s ="sachiiiiiiin";
 		
 		removeDupChar(s); // sachin
 	}
