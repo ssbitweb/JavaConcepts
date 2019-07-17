@@ -3,19 +3,19 @@ package OOPConceptsPart2.F_ExceptionHandling;
 // Exception -- Exception is an event that occur during execution of program, that disrupt the normal flow of program.
 //
 // Hierarchy-->
-//							 Object
-//								|	
-//							throwable
-//								|
-// Exception------------------------------------------Error
-//		|									      		|
-// RuntimeException				IOError  AWTError	VirtualMachineError 	AssertionError
-//	 --ArithmaticException								|							
-//	 --NullpointerException								--StackOverflowError
-//	 --uncheckedException								--OutOfMemoryError
-//			--IndexOutOfBoundException														
-//					--ArrayIndexOutofBoundException
-//					--StringIndexOutOfBoundException
+//                Object
+//                  |	
+//               throwable
+//                  |
+// Exception----------------------------------Error
+//    |		                                    |
+// RuntimeException		IOError  AWTError	VirtualMachineError 	AssertionError
+//	 --ArithmaticException						|							
+//	 --NullpointerException						--StackOverflowError
+//	 --uncheckedException						--OutOfMemoryError
+//	       --IndexOutOfBoundException														
+//	              --ArrayIndexOutofBoundException
+//	              --StringIndexOutOfBoundException
 //		IOException
 //			--InterruptedIOException
 //			--FileNotFoundException
