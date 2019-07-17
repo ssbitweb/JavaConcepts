@@ -7,12 +7,12 @@ package OOPConceptsPart2.F_ExceptionHandling;
 //                  |	
 //               throwable
 //                  |
-// Exception----------------------------------Error
-//    |		                                    |
-// RuntimeException		IOError  AWTError	VirtualMachineError 	AssertionError
-//	 --ArithmaticException						|							
-//	 --NullpointerException						--StackOverflowError
-//	 --uncheckedException						--OutOfMemoryError
+// Exception------------------------------Error
+//    |                                      |
+// RuntimeException	  IOError  AWTError	VirtualMachineError AssertionError
+//	 --ArithmaticException					|							
+//	 --NullpointerException					--StackOverflowError
+//	 --uncheckedException					--OutOfMemoryError
 //	       --IndexOutOfBoundException														
 //	              --ArrayIndexOutofBoundException
 //	              --StringIndexOutOfBoundException
