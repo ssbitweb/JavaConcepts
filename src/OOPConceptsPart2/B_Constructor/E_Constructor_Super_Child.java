@@ -29,10 +29,10 @@ public class E_Constructor_Super_Child extends D_Constructor_Super_Parent {
 
 	public static void main(String[] args) {
 
-		E_Constructor_Super_Child m = new E_Constructor_Super_Child();
-		E_Constructor_Super_Child m1 = new E_Constructor_Super_Child(10);
-		E_Constructor_Super_Child m2 = new E_Constructor_Super_Child(10, 20);
-		E_Constructor_Super_Child m3 = new E_Constructor_Super_Child(10, 20, 30);
+//		E_Constructor_Super_Child m = new E_Constructor_Super_Child();
+//		E_Constructor_Super_Child m1 = new E_Constructor_Super_Child(10);
+//		E_Constructor_Super_Child m2 = new E_Constructor_Super_Child(10, 20);
+//		E_Constructor_Super_Child m3 = new E_Constructor_Super_Child(10, 20, 30);
 	}
 
 }

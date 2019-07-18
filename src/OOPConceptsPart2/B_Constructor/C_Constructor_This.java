@@ -52,9 +52,9 @@ public class C_Constructor_This {
 	
 	public static void main(String[] args) {
 		
-		C_Constructor_This m = new C_Constructor_This();	// creating objects
-		C_Constructor_This m1 = new C_Constructor_This(10);
-		C_Constructor_This m2 = new C_Constructor_This(20,30);
+//		C_Constructor_This m = new C_Constructor_This();	// creating objects
+//		C_Constructor_This m1 = new C_Constructor_This(10);
+//		C_Constructor_This m2 = new C_Constructor_This(20,30);
 		C_Constructor_This m3 = new C_Constructor_This("sachin",25);
 		
 		System.out.println(m3.name);

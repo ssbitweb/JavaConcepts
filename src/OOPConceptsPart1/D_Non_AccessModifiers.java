@@ -26,7 +26,7 @@ package OOPConceptsPart1;
 
 // --static means fixed..its value is fixed throughout the program
 // --We can create static variables at class-level only
-// --As static methods can not be overridden.
+// --As static methods can NOT be overridden.
 // --As static methods can be overloaded.
 // --static keyword belong to class rather than instance of class.-- this means
 // --we do not need to create instance/object of class-- can access directly or className.varName
@@ -48,6 +48,18 @@ package OOPConceptsPart1;
 //
 //==================================
 // 3. abstract
+//  --applicable on classes, nested class, and methods BUT not on variable.(imp)
+//  --abstract means not implemented.
+//  --abstract class can have abstract as well as non-abstract(concrete--without abstract keyword*) method.
+//  --abstract method means only method signature and NOT method body.
+//  --If a class extends the abstract class, it must also implement at least one of the abstract method.
+//  --abstract class can be overloaded and overridden -- thats the purpose.
+//  --we can't create Object of abstract class and interface (interface by default abstract)
+//  --Some Illegal Combination (NOT ALLOWED)
+//  -- final abstract
+//  -- abstract static
+//  -- abstract private
+//  -- abstract synchronized
 //
 // 4. synchronized-- used in threads
 // 5. volatile -- used in threads

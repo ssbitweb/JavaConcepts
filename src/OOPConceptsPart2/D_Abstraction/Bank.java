@@ -1,8 +1,8 @@
 package OOPConceptsPart2.D_Abstraction;
 
-// Abstraction -- Hiding implementation logic and only defining prototype method i.e without method body.
+// Abstraction -- Hiding implementation logic and only defining prototype method(only method signature) i.e without method body.
 
-// Abstract class -- abstract class can have abstract as well as non abstract method.
+// Abstract class -- abstract class can have abstract as well as non abstract(CONCRETE) method.
 
 // partial abstraction - at least one abstract method
 // 100% abstraction -- all abstract method. e.g Interface
