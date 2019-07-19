@@ -16,13 +16,25 @@ package OOPConceptsPart2.F_ExceptionHandling;
 //	       --IndexOutOfBoundException														
 //	              --ArrayIndexOutofBoundException
 //	              --StringIndexOutOfBoundException
-//		IOException
+//	IOException
 //			--InterruptedIOException
 //			--FileNotFoundException
-//		SQLException
-//		InterruptedException
-//		AWTException
-//		CheckedException	
+//	SQLException
+//	InterruptedException
+//	AWTException
+//	CheckedException
+//
+//  WebDriverException
+//      --TimeoutException
+//      --ConnectionClosedException
+//      --UnreachableException
+//      --StaleElementReferenceException
+//      --NotFoundException
+//            --NoSuchElementException
+//            --NoSuchWindowException
+//            --NoSuchFrameException
+//            --NoAlertPresentException
+//
 //----------------------------------------------------------------------------------------------------------
 
 public class A_Try_Catch {
@@ -58,6 +70,17 @@ public class A_Try_Catch {
 		
 		// 2 . using throws declaration.
 
+		
+		//============================================
+		
+		/*Below methods can be used to display Exception information:
+			
+			1. printStackTrace(): prints the stack trace , exception name and description.
+			2. toString(): returns a text message describing the exception name and description.
+			3. getMessage(): displays the description of exception
+		
+		*/
+		
 	}
 
 }
