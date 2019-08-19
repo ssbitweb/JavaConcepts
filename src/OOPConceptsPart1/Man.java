@@ -6,7 +6,7 @@ public class Man {
 		
 		Woman obj = new Woman("Size matters..!");
 		
-		System.out.println(obj.getS()); //Size matters..!
+		System.out.println(obj.getS()); // Size matters..! 
 		
 	}
 	
