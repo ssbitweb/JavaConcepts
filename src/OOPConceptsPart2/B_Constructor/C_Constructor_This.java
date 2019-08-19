@@ -30,7 +30,7 @@ public class C_Constructor_This {
 	
 	public C_Constructor_This() { //constructor 
 //		final String myName; // only final permitted.
-//		static String myName2; --> gives error bcoz constructor can't have static/abstract/ members also except final.
+//		static String myName2; --> gives error bcoz constructor can't have static/abstract/ members also, except final.
 		System.out.println("default-constructor");	// 0 parameter
 		
 	}
