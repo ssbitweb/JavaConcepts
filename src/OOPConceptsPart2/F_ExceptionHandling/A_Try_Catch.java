@@ -9,7 +9,7 @@ package OOPConceptsPart2.F_ExceptionHandling;
 //                  |
 // Exception------------------------------Error
 //    |                                      |
-// RuntimeException IOError AWTError VirtualMachineError AssertionError
+//  RuntimeException IOError AWTError VirtualMachineError AssertionError
 //	 --ArithmaticException            |							
 //	 --NullpointerException	          --StackOverflowError
 //	 --uncheckedException             --OutOfMemoryError
@@ -17,17 +17,17 @@ package OOPConceptsPart2.F_ExceptionHandling;
 //	              --ArrayIndexOutofBoundException
 //	              --StringIndexOutOfBoundException
 //	IOException
-//			--InterruptedIOException
-//			--FileNotFoundException
-//	SQLException
-//	InterruptedException
-//	AWTException
-//	CheckedException
+//      --InterruptedIOException
+//      --FileNotFoundException
+//  SQLException
+//  InterruptedException
+//  AWTException
+//  CheckedException
 //
 //  WebDriverException
 //      --TimeoutException
 //      --ConnectionClosedException
-//      --UnreachableException
+//      --UnreachableBrowserException
 //      --StaleElementReferenceException
 //      --NotFoundException
 //            --NoSuchElementException

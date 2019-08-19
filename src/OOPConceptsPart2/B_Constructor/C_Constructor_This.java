@@ -28,11 +28,14 @@ public class C_Constructor_This {
 	String name;  // class variables
 	int age;
 	
-	public C_Constructor_This() {   //constructor 
+	public C_Constructor_This() { //constructor 
+//		final String myName; // only final permitted.
+//		static String myName2; --> gives error bcoz constructor can't have static/abstract/ members also except final.
 		System.out.println("default-constructor");	// 0 parameter
+		
 	}
 	
-	public C_Constructor_This(int i) {		// 1 parameter -- constructor overloading		 
+	public C_Constructor_This(int i) { // 1 parameter -- constructor overloading		 
 		System.out.println("1 param-constructor");
 		System.out.println(i);
 	}
@@ -43,10 +46,10 @@ public class C_Constructor_This {
 	}
 	
 	public C_Constructor_This(String name, int age) { // local variables	 
-		this.name = name;	// initializing class variables.
-		this.age = age;		// i.e this.class vars = local vars
+		this.name = name; // initializing class variables.
+		this.age = age;	// i.e this.class vars = local vars
 		
-//		name = name1;		// without using this keyword
+//		name = name1; // without using this keyword
 			 
 	}
 	
@@ -56,6 +59,7 @@ public class C_Constructor_This {
 //		C_Constructor_This m1 = new C_Constructor_This(10);
 //		C_Constructor_This m2 = new C_Constructor_This(20,30);
 		C_Constructor_This m3 = new C_Constructor_This("sachin",25);
+		
 		
 		System.out.println(m3.name);
 		System.out.println(m3.age);
